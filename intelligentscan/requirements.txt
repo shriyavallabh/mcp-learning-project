@@ -1,0 +1,60 @@
+# IntelligentScan Dependencies
+
+# MCP Server Framework
+fastmcp>=0.2.0
+
+# Agent Orchestration
+langgraph>=0.0.40
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+
+# LLM Integration
+openai>=1.10.0
+anthropic>=0.18.0
+
+# Vector Database & Embeddings
+qdrant-client>=1.7.0
+sentence-transformers>=2.3.0
+
+# Code Analysis
+tree-sitter>=0.20.0
+tree-sitter-python>=0.20.0
+tree-sitter-java>=0.20.0
+tree-sitter-javascript>=0.20.0
+astroid>=3.0.0  # Advanced AST analysis
+
+# Graph & Data Processing
+networkx>=3.2.0  # For knowledge graphs
+pygraphviz>=1.11  # Graph visualization
+
+# Data Storage
+redis>=5.0.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL driver
+
+# API & Web
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+click>=8.1.0  # CLI interface
+rich>=13.7.0  # Beautiful terminal output
+gitpython>=3.1.0  # Git operations
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+pytest-cov>=4.1.0
+
+# Code Quality
+black>=24.1.0
+ruff>=0.1.0
+mypy>=1.8.0
+
+# Monitoring & Logging
+loguru>=0.7.0
+prometheus-client>=0.19.0

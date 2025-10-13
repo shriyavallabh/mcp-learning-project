@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+pdf_env/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+completion.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Large files
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.aiff
+*.wav
+*.mp3
+
+# Sensitive data
+*.env
+.env
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# Marketing package (too large)
+MARKETING_PACKAGE/
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Compiled files
+*.pyc
+*.pyo

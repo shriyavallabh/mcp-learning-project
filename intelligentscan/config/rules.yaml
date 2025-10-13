@@ -1,0 +1,165 @@
+# IntelligentScan Rules Configuration
+# This file defines all scanning rules for vulnerability, ARB compliance, and AI-readiness checks
+
+# ============================================
+# VULNERABILITY RULES
+# ============================================
+vulnerability_rules:
+  log4j:
+    enabled: true
+    description: "Log4j vulnerability (CVE-2021-44228)"
+    severity: critical
+    patterns:
+      - "org\\.apache\\.logging\\.log4j"
+      - "log4j-core.*2\\.([0-9]|1[0-4])\\."
+      - "\\$\\{jndi:"
+    file_extensions: [".java", ".xml", ".gradle", ".pom"]
+    remediation: "Upgrade log4j to version 2.17.1 or later"
+
+  hardcoded_secrets:
+    enabled: true
+    description: "Hardcoded credentials or API keys"
+    severity: critical
+    patterns:
+      - "password\\s*=\\s*['\"][^'\"]{3,}['\"]"
+      - "api[_-]?key\\s*=\\s*['\"][^'\"]{10,}['\"]"
+      - "secret\\s*=\\s*['\"][^'\"]{10,}['\"]"
+    file_extensions: [".py", ".js", ".java", ".go", ".rb"]
+    remediation: "Move credentials to environment variables or secret management system"
+
+  sql_injection:
+    enabled: true
+    description: "Potential SQL injection vulnerability"
+    severity: high
+    patterns:
+      - "execute\\(['\"].*\\%s.*['\"].*\\%"
+      - "execute\\(.*\\+.*\\)"
+    file_extensions: [".py", ".java", ".php"]
+    remediation: "Use parameterized queries instead of string concatenation"
+
+# ============================================
+# ARB COMPLIANCE RULES
+# ============================================
+arb_rules:
+  ARB-SEC-001:
+    title: "No hardcoded credentials"
+    category: security
+    severity: critical
+    description: "Database passwords, API keys must not be hardcoded"
+    applicable_languages: [python, java, javascript, csharp]
+    pattern_matching:
+      ast_patterns:
+        - type: "assignment"
+          variable_names: ["password", "api_key", "secret", "token"]
+          value_type: "string_literal"
+    remediation: "Use environment variables or Azure Key Vault"
+    example_violation: "password = 'admin123'"
+    example_compliant: "password = os.getenv('DB_PASSWORD')"
+
+  ARB-SEC-015:
+    title: "API endpoints must use authentication"
+    category: security
+    severity: high
+    description: "All API endpoints must have authentication middleware"
+    applicable_languages: [python, java, javascript]
+    pattern_matching:
+      ast_patterns:
+        - type: "route_decorator"
+          missing_decorator: ["auth_required", "authenticate"]
+    remediation: "Add @auth_required decorator to all API routes"
+
+  ARB-PERF-003:
+    title: "Database queries must use connection pooling"
+    category: performance
+    severity: medium
+    description: "Direct database connections without pooling reduce performance"
+    applicable_languages: [python, java]
+    remediation: "Use connection pooling (SQLAlchemy, HikariCP)"
+
+  ARB-ARCH-007:
+    title: "No circular dependencies between modules"
+    category: architecture
+    severity: high
+    description: "Circular imports reduce code maintainability"
+    applicable_languages: [python, java, javascript]
+    remediation: "Refactor to eliminate circular dependencies"
+
+  ARB-CODE-012:
+    title: "All functions must have error handling"
+    category: code_quality
+    severity: medium
+    description: "Functions should handle potential errors gracefully"
+    applicable_languages: [python, java, javascript]
+    remediation: "Add try-catch blocks or error handling logic"
+
+# ============================================
+# AI-READINESS RULES
+# ============================================
+ai_readiness_rules:
+  missing_docstrings:
+    enabled: true
+    description: "Functions/classes lack docstrings"
+    severity: low
+    confidence_impact: -0.2
+    suggestion: "Add docstrings to all public functions and classes"
+
+  poor_naming:
+    enabled: true
+    description: "Single-letter or unclear variable names"
+    severity: low
+    confidence_impact: -0.15
+    suggestion: "Use descriptive variable names (e.g., 'user_id' instead of 'x')"
+
+  high_complexity:
+    enabled: true
+    description: "Function has high cyclomatic complexity"
+    severity: medium
+    confidence_impact: -0.3
+    threshold: 10
+    suggestion: "Break down complex functions into smaller, focused functions"
+
+  inconsistent_style:
+    enabled: true
+    description: "Inconsistent code formatting"
+    severity: low
+    confidence_impact: -0.1
+    suggestion: "Use code formatter (black, prettier, gofmt)"
+
+  missing_type_hints:
+    enabled: true
+    description: "Python functions lack type hints"
+    severity: low
+    confidence_impact: -0.15
+    applicable_languages: [python]
+    suggestion: "Add type hints to function signatures"
+
+# ============================================
+# GENERAL SETTINGS
+# ============================================
+settings:
+  # Files/directories to exclude from scanning
+  exclude_patterns:
+    - ".git/"
+    - "node_modules/"
+    - "venv/"
+    - "__pycache__/"
+    - "build/"
+    - "dist/"
+    - ".next/"
+    - "target/"
+
+  # Maximum file size to scan (in KB)
+  max_file_size_kb: 1024
+
+  # Enable parallel scanning
+  parallel_scanning: true
+  max_workers: 10
+
+  # Cache settings
+  enable_caching: true
+  cache_ttl_hours: 24
+
+  # Reporting
+  default_report_format: "json"
+  include_code_snippets: true
+  context_lines: 5

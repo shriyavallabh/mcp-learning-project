@@ -1,0 +1,81 @@
+# Docker Compose for IntelligentScan Development Environment
+version: '3.8'
+
+services:
+  # IntelligentScan MCP Server
+  intelligentscan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: intelligentscan-server
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=intelligentscan
+      - POSTGRES_USER=intelligentscan
+      - POSTGRES_PASSWORD=intelligentscan_password
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+      - ~/.ssh:/root/.ssh:ro  # For git operations
+    depends_on:
+      - redis
+      - postgres
+    restart: unless-stopped
+    networks:
+      - intelligentscan-network
+
+  # Redis (for caching and state management)
+  redis:
+    image: redis:7-alpine
+    container_name: intelligentscan-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    networks:
+      - intelligentscan-network
+
+  # PostgreSQL (for scan history and results)
+  postgres:
+    image: postgres:15-alpine
+    container_name: intelligentscan-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=intelligentscan
+      - POSTGRES_USER=intelligentscan
+      - POSTGRES_PASSWORD=intelligentscan_password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - intelligentscan-network
+
+  # Qdrant (vector database for RAG)
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: intelligentscan-qdrant
+    ports:
+      - "6333:6333"  # HTTP API
+      - "6334:6334"  # gRPC
+    volumes:
+      - qdrant-data:/qdrant/storage
+    restart: unless-stopped
+    networks:
+      - intelligentscan-network
+
+volumes:
+  redis-data:
+  postgres-data:
+  qdrant-data:
+
+networks:
+  intelligentscan-network:
+    driver: bridge
