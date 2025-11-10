@@ -1,0 +1,1100 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2025-11-08",
+    "last_updated": "2025-11-08",
+    "total_topics": 81,
+    "total_phases": 4,
+    "estimated_total_hours": "60-80",
+    "repository_path": "/Users/shriyavallabhvidyadharpethkar/Desktop/mcp"
+  },
+  "phases": [
+    {
+      "phase_id": 1,
+      "phase_name": "FOUNDATIONS",
+      "phase_description": "Week 1 - Basic concepts and fundamentals",
+      "difficulty": "beginner",
+      "estimated_hours": "20-25",
+      "topics": [
+        {
+          "topic_id": 1,
+          "title": "Chapter 1: Introduction to MCP",
+          "file_path": "MCP_Complete_Tutorial_Chapter_1.md",
+          "difficulty": "beginner",
+          "estimated_minutes": 45,
+          "prerequisites": [],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 1.1,
+              "title": "What is MCP (Model Context Protocol)",
+              "concepts": ["Definition and purpose", "Universal translator concept", "Safety and access control"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 1.2,
+              "title": "Why MCP is Needed",
+              "concepts": ["Problem: AI can't access tools", "Solution: MCP bridges gap", "Real-world analogies"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 1.3,
+              "title": "Core Benefits",
+              "concepts": ["Safety first", "Universal language", "Easy to build"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 1.4,
+              "title": "What You Can Do with MCP",
+              "concepts": ["Study assistant", "Code helper", "Research tool"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 1.5,
+              "title": "Key Players",
+              "concepts": ["MCP Client", "MCP Server", "Your resources"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand MCP = bridge concept",
+            "Know three main players",
+            "See practical applications"
+          ]
+        },
+        {
+          "topic_id": 2,
+          "title": "Chapter 2: Understanding Client-Server Architecture",
+          "file_path": "MCP_Complete_Tutorial_Chapter_2.md",
+          "difficulty": "beginner",
+          "estimated_minutes": 60,
+          "prerequisites": [1],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 2.1,
+              "title": "Fundamentals of Client-Server",
+              "concepts": ["Client = asks", "Server = provides", "About ROLES not LOCATIONS"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 2.2,
+              "title": "Same Computer Possible",
+              "concepts": ["Both on YOUR laptop", "Different windows/terminals", "Still client-server"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 2.3,
+              "title": "Real Examples on Your Computer",
+              "concepts": ["Web browser → Google", "Claude Desktop → MCP Server", "Both can be local"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 2.4,
+              "title": "How Client-Server Works",
+              "concepts": ["Client starts conversation", "Server waits and responds", "Take turns like texting"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 2.5,
+              "title": "Common Misconceptions",
+              "concepts": ["Server ≠ big computer room", "Client ≠ person", "Can be same computer"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 2.6,
+              "title": "Hands-On Exercise",
+              "concepts": ["Create super_simple_server.py", "Create super_simple_client.py", "Run both in terminals"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand client-server is about JOBS (roles), not LOCATIONS",
+            "Run first client-server setup",
+            "Debug common misconceptions"
+          ]
+        },
+        {
+          "topic_id": 3,
+          "title": "Chapter 3: Python Basics for MCP",
+          "file_path": "MCP_Complete_Tutorial_Chapter_3.md",
+          "difficulty": "beginner",
+          "estimated_minutes": 90,
+          "prerequisites": [],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 3.1,
+              "title": "Variables (Storage Boxes)",
+              "concepts": ["Strings (text)", "Integers (whole numbers)", "Floats (decimals)", "Booleans (True/False)"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 3.2,
+              "title": "Data Structures",
+              "concepts": ["Lists (numbered collections)", "Dictionaries (labeled drawers)", "MCP message structure"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 3.3,
+              "title": "Functions (Reusable Tasks)",
+              "concepts": ["Function definition", "Parameters and return values", "Function vs method"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 3.4,
+              "title": "Classes (Building Servers)",
+              "concepts": ["Blueprint concept", "__init__ constructor", "Methods and attributes", "Creating objects"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 3.5,
+              "title": "Async/Await (Multiple Requests)",
+              "concepts": ["Synchronous vs asynchronous", "Why MCP needs async", "Handle multiple requests"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 3.6,
+              "title": "Practical Mini Server",
+              "concepts": ["SimpleServer class", "Handle requests", "Combined exercise"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Write basic Python functions",
+            "Understand classes and objects",
+            "Use async/await for concurrent operations"
+          ]
+        },
+        {
+          "topic_id": 4,
+          "title": "First Hands-On Project",
+          "file_path": "MCP_Complete_Tutorial_Chapter_2.md",
+          "difficulty": "beginner",
+          "estimated_minutes": 180,
+          "prerequisites": [1, 2, 3],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 4.1,
+              "title": "Create simple_server.py",
+              "concepts": ["Server setup", "Request handling", "Response generation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 4.2,
+              "title": "Create simple_client.py",
+              "concepts": ["Client setup", "Send request", "Handle response"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 4.3,
+              "title": "Test Communication",
+              "concepts": ["Run both scripts", "Debug issues", "Verify message flow"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Build first working client-server system",
+            "Understand practical implementation",
+            "Debug and troubleshoot"
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": 2,
+      "phase_name": "CORE CONCEPTS",
+      "phase_description": "Week 2 - Deep dive into MCP and protocols",
+      "difficulty": "intermediate",
+      "estimated_hours": "25-30",
+      "topics": [
+        {
+          "topic_id": 5,
+          "title": "Chapter 4: The Complete MCP Interaction Cycle",
+          "file_path": "MCP_Complete_Tutorial_Chapter_4.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 120,
+          "prerequisites": [1, 2, 3],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 5.1,
+              "title": "Complete Interaction Flow (9 Steps)",
+              "concepts": [
+                "Step 1: You type to Claude",
+                "Step 2: Claude thinks",
+                "Step 3: Claude asks 'what can you do?'",
+                "Step 4: MCP Server responds with tool list",
+                "Step 5: Claude picks right tool",
+                "Step 6: Claude calls tool",
+                "Step 7: MCP Server executes",
+                "Step 8: Server returns results",
+                "Step 9: Claude responds to you"
+              ],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.2,
+              "title": "Tools, Resources, and Prompts",
+              "concepts": ["Tools (functions to invoke)", "Resources (read-only data)", "Prompts (templates with placeholders)"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.3,
+              "title": "Python Implementation",
+              "concepts": ["ClaudeClient class", "invoke_tool() method", "invoke_resource() method", "interpolate_prompt() method"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.4,
+              "title": "MCPServer Class",
+              "concepts": ["Expose capabilities", "Tool definitions", "Resource definitions", "Prompt templates"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.5,
+              "title": "FastMCP Library",
+              "concepts": ["Official SDK", "FastMCP 2.0", "Decorator pattern"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.6,
+              "title": "MCP-O (OpenAPI Bridge)",
+              "concepts": ["Convert REST APIs to MCP", "Wrap existing APIs", "Command-line usage"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.7,
+              "title": "Agent-to-Agent Protocol",
+              "concepts": ["One MCP server calling another", "Real-world examples"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 5.8,
+              "title": "Key Clarifications",
+              "concepts": ["Variable naming is labels", "LLM is CLIENT not server", "MCP servers deterministic, LLMs non-deterministic"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand complete message flow",
+            "Know all three MCP features (tools, resources, prompts)",
+            "Build more sophisticated MCP servers"
+          ]
+        },
+        {
+          "topic_id": 6,
+          "title": "Chapter 7: JSON-RPC Protocol",
+          "file_path": "MCP_Complete_Tutorial_Chapter_7.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 120,
+          "prerequisites": [3, 5],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 6.1,
+              "title": "What is JSON-RPC?",
+              "concepts": ["Structured protocol", "Request/response pattern", "Formal specification"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.2,
+              "title": "JSON Basics First",
+              "concepts": ["JSON = JavaScript Object Notation", "Text format for data", "Python dict ↔ JSON"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.3,
+              "title": "JSON-RPC Structure",
+              "concepts": ["REQUEST: jsonrpc, method, params, id", "RESPONSE: jsonrpc, result, id", "ERROR: code, message, data"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.4,
+              "title": "Complete MCP Conversation (6 Steps)",
+              "concepts": ["Initialize", "Capabilities", "List tools", "Tools response", "Tool call", "Execution response"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.5,
+              "title": "Why ID Field is Crucial",
+              "concepts": ["Match requests to responses", "Out-of-order responses", "Concurrent requests"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.6,
+              "title": "Standard Error Codes",
+              "concepts": ["Parse error (-32700)", "Invalid Request (-32600)", "Method not found (-32601)", "Invalid params (-32602)", "Internal error (-32603)"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.7,
+              "title": "Notifications (No Response)",
+              "concepts": ["Messages without ID", "Fire-and-forget", "Logging pattern"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.8,
+              "title": "Python Implementation",
+              "concepts": ["JSONRPCHandler class", "create_request()", "create_response()", "create_error()", "handle_request()"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.9,
+              "title": "MCP-Specific Methods",
+              "concepts": ["initialize", "shutdown", "tools/list", "tools/call", "resources/list", "resources/read", "prompts/list", "prompts/get"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 6.10,
+              "title": "Transport Mechanisms",
+              "concepts": ["stdio (Standard Input/Output)", "Streamable HTTP", "SSE (deprecated)"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand JSON-RPC is the 'language' MCP uses",
+            "Build properly formatted MCP messages",
+            "Handle errors correctly"
+          ]
+        },
+        {
+          "topic_id": 7,
+          "title": "Chapter 5: Infrastructure Concepts",
+          "file_path": "MCP_Complete_Tutorial_Chapter_5.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 120,
+          "prerequisites": [2],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 7.1,
+              "title": "Infrastructure Pyramid",
+              "concepts": ["Physical Servers", "Virtual Machines", "Containers", "Kubernetes", "Serverless"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.2,
+              "title": "Level 1: Physical Servers",
+              "concepts": ["Real computers", "Cost inefficiency", "All-or-nothing"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.3,
+              "title": "Level 2: Virtual Machines",
+              "concepts": ["Multiple 'fake computers'", "Full OS each", "Heavy (1-20GB)", "Slow boot (1-2 min)", "Good isolation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.4,
+              "title": "Level 3: Containers",
+              "concepts": ["Lightweight (50MB)", "Fast startup (seconds)", "App + dependencies only", "Shares host OS kernel"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.5,
+              "title": "CRITICAL: Dockerfile vs Docker Image",
+              "concepts": ["Dockerfile = Recipe (text)", "Docker Image = Frozen meal (compiled)", "Build process"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.6,
+              "title": "Level 4: Kubernetes",
+              "concepts": ["Manager for containers", "Cluster, Node, Pod", "Service and Deployment", "Auto-scaling", "Health management"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.7,
+              "title": "CRITICAL: Container vs Pod",
+              "concepts": ["Container = Single app in box", "Pod = Kubernetes wrapper", "Multiple containers share pod", "Shared localhost within pod"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 7.8,
+              "title": "Level 5: Serverless",
+              "concepts": ["No server management", "Pay per execution", "Auto-scales 0 to infinity", "Limited runtime (15 min)"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Each level is an abstraction",
+            "Containers are NOT complete VMs",
+            "Pods wrap containers for Kubernetes",
+            "Choose right level for needs"
+          ]
+        },
+        {
+          "topic_id": 8,
+          "title": "Chapter 6: FastAPI and Pydantic",
+          "file_path": "MCP_Complete_Tutorial_Chapter_6.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 90,
+          "prerequisites": [3, 7],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 8.1,
+              "title": "Pydantic (Data Validation)",
+              "concepts": ["Correct data types", "Automatic validation", "Nice error messages", "BaseModel class"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 8.2,
+              "title": "FastAPI (Web Framework)",
+              "concepts": ["Modern Python", "Automatic documentation", "Type hints", "Async support", "Endpoint definition"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 8.3,
+              "title": "Example: File Reading API",
+              "concepts": ["FileRequest model", "FileResponse model", "Pydantic validation", "OpenAPI auto-generation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 8.4,
+              "title": "MCP Deployment Options",
+              "concepts": ["Local development", "Container (Docker)", "Kubernetes (K8s)", "Serverless (AWS/Azure)", "Traditional server"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 8.5,
+              "title": "CRITICAL: FastMCP vs MCP-O",
+              "concepts": ["FastMCP = Building NEW", "MCP-O = Converting EXISTING", "When to use each"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 8.6,
+              "title": "Related Concepts",
+              "concepts": ["Microservices", "REST API", "WebSockets", "gRPC", "Service Mesh", "CI/CD", "Load Balancer", "API Gateway"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "FastMCP = building, MCP-O = wrapping",
+            "Kubernetes nodes are VMs for good reasons",
+            "Modern Python has great ecosystem"
+          ]
+        },
+        {
+          "topic_id": 9,
+          "title": "Tool Calling BEFORE MCP",
+          "file_path": "COMPLETE_TOOL_CALLING_EXPLANATION_BEFORE_MCP.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 90,
+          "prerequisites": [3, 5],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 9.1,
+              "title": "Traditional OpenAI Approach",
+              "concepts": ["Manual function definition JSON", "Complex parsing logic", "Manual response handling", "112+ lines of code"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand complexity of traditional approach",
+            "Appreciate improvements MCP brings"
+          ]
+        },
+        {
+          "topic_id": 10,
+          "title": "Tool Calling WITH MCP",
+          "file_path": "COMPLETE_TOOL_CALLING_EXPLANATION_WITH_MCP.md",
+          "difficulty": "intermediate",
+          "estimated_minutes": 90,
+          "prerequisites": [3, 5, 9],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 10.1,
+              "title": "Modern MCP Approach",
+              "concepts": ["Decorator-based", "Automatic validation", "Built-in error handling", "27 lines of code"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 10.2,
+              "title": "Key Differences",
+              "concepts": ["Complexity: Manual vs automatic", "Code size: 4x reduction", "Maintainability: Much better", "Flexibility: Greater options"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "See dramatic simplification with MCP",
+            "Understand benefits of modern tools"
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": 3,
+      "phase_name": "ENTERPRISE & ADVANCED",
+      "phase_description": "Week 3-4 - Enterprise platforms and advanced topics",
+      "difficulty": "advanced",
+      "estimated_hours": "40-50",
+      "topics": [
+        {
+          "topic_id": 11,
+          "title": "Chapter 8: AI Agents and Sub-Agents",
+          "file_path": "MCP_Complete_Tutorial_Chapter_8.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 180,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 11.1,
+              "title": "What is an AI Agent?",
+              "concepts": ["Smart assistant with tools", "Can think, plan, decide", "Uses multiple tools", "Remembers conversation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 11.2,
+              "title": "Agent Architecture",
+              "concepts": ["BRAIN: Reasoning and planning", "MEMORY: Past conversations", "TOOLS: Web, files, APIs, code", "EXECUTION ENGINE: Combines all three"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 11.3,
+              "title": "GitHub Copilot Deep Dive",
+              "concepts": ["Brain: GPT-4.1", "Tools available", "Context remembered", "Workspace awareness"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 11.4,
+              "title": "Agent Execution Loop",
+              "concepts": ["Understand request", "Plan approach", "Use tools", "Check results", "Iterate", "Present solution"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Design agent systems",
+            "Understand agent architecture",
+            "Know execution patterns"
+          ]
+        },
+        {
+          "topic_id": 12,
+          "title": "MLflow & MLOps",
+          "file_path": "COMPLETE_MLFLOW_MLOPS_EXPLANATION.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 180,
+          "prerequisites": [3, 8],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 12.1,
+              "title": "What Problem is MLflow Solving?",
+              "concepts": ["Experimentation tracking", "Model versioning", "Reproducibility", "Deployment management", "Auditing and compliance"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 12.2,
+              "title": "Core Concepts",
+              "concepts": ["MLflow (platform)", "Experiment (container)", "Run (single execution)", "Model Registry (storage)", "Model Lifecycle"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 12.3,
+              "title": "Four MLflow Components",
+              "concepts": ["MLflow Tracking", "MLflow Projects", "MLflow Models", "MLflow Registry"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 12.4,
+              "title": "Key Features",
+              "concepts": ["Parameter logging", "Metric tracking", "Artifact storage", "Model versioning", "Production states", "Transition workflow"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 12.5,
+              "title": "Workflow",
+              "concepts": ["Run experiment", "Log parameters", "Save artifacts", "Register best model", "Transition to production", "Deploy to serving"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Track ML experiments",
+            "Deploy with MLflow",
+            "Understand model lifecycle"
+          ]
+        },
+        {
+          "topic_id": 13,
+          "title": "Agentic Foundry Summary",
+          "file_path": "AGENTIC_FOUNDRY_SUMMARY.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 45,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 13.1,
+              "title": "Platform Overview",
+              "concepts": ["WordPress for AI Agents", "Low-code/no-code", "Built-in evaluation", "Deployment options"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Quick overview of Agentic Foundry",
+            "Understand use cases"
+          ]
+        },
+        {
+          "topic_id": 14,
+          "title": "Agentic Foundry Complete Study",
+          "file_path": "AGENTIC_FOUNDRY_COMPLETE_NOTES.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 240,
+          "prerequisites": [13],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 14.1,
+              "title": "What is Agentic Foundry?",
+              "concepts": ["Enterprise platform by Infosys", "WordPress for AI Agents", "Low-code/no-code agent creation", "Built-in evaluation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.2,
+              "title": "Core Components (Three Layers)",
+              "concepts": ["Agent Creation: LLM + Tools + System Prompt", "LLM Options: GPT-4, Claude, Llama", "Tools: Python, MCP, APIs", "System Prompt: Auto-generated"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.3,
+              "title": "The Four Pillars",
+              "concepts": ["Tool Onboarding", "Agent Creation", "Evaluation", "Prompt Optimization"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.4,
+              "title": "MCP Platform (Standalone)",
+              "concepts": ["CODE: Write Python in UI", "ACTIVE: External MCP running", "MODULE: npm/pip packages", "Visibility levels"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.5,
+              "title": "Key Features",
+              "concepts": ["Low-code GUI", "Evaluation (Ground Truth + LLM as Judge)", "Episodic memory", "Human-in-the-loop", "Canvas AI", "Export Docker/K8s", "Governance", "Model-agnostic"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.6,
+              "title": "Real-World Use Cases",
+              "concepts": ["Project Audit: 2-4h → 45s", "Supply Chain: 2-3d → 2min", "Sales Dashboard: 3-4h → 30s", "Test Data Gen: 2-3h → 20s", "Customer Support: 45min → 5-30s"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.7,
+              "title": "Evaluation Framework",
+              "concepts": ["Ground Truth Testing", "Score metrics: TF-IDF, SBERT, JAKAD", "LLM as Judge", "Score thresholds", "Block deployment if fails"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.8,
+              "title": "Episodic Memory",
+              "concepts": ["Learns from feedback", "Improves over time", "Stores negative examples", "Auto-updates prompt"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 14.9,
+              "title": "Deployment Options",
+              "concepts": ["Hosted (Infosys manages)", "Docker Export", "Kubernetes (HA)", "Sizing guide"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Deep understanding of Agentic Foundry",
+            "Know evaluation framework",
+            "Deploy production agents"
+          ]
+        },
+        {
+          "topic_id": 15,
+          "title": "ACE Studio Complete Tutorial",
+          "file_path": "ACE_STUDIO_COMPLETE_TUTORIAL.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 180,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 15.1,
+              "title": "What is ACE Studio?",
+              "concepts": ["AI development platform", "Workspace management", "Agent deployment", "MCP server deployment", "Web app hosting", "Job scheduling", "Data storage", "Benchmarking"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 15.2,
+              "title": "Workspace Creation",
+              "concepts": ["Name customization", "Base Image", "CUDA Images (GPU)", "PVT Image"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 15.3,
+              "title": "Agent Development Workflow",
+              "concepts": ["Creating agents", "Tool integration", "Testing agents", "Iterative improvement"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 15.4,
+              "title": "MLflow Integration",
+              "concepts": ["Model tracking", "Experiment management", "Model registry", "Production deployment"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 15.5,
+              "title": "MCP Server Deployment",
+              "concepts": ["Containerization", "Configuration", "Testing", "Scaling"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 15.6,
+              "title": "Jobs and Scheduling",
+              "concepts": ["Remote script execution", "Scheduled tasks", "Monitor job status", "Error handling"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Use ACE Studio platform",
+            "Deploy agents and MCP servers",
+            "Manage workflows"
+          ]
+        },
+        {
+          "topic_id": 16,
+          "title": "IntelligentScan Project Deep Dive",
+          "file_path": "IntelligentScan.md",
+          "difficulty": "advanced",
+          "estimated_minutes": 360,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8, 11],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 16.1,
+              "title": "Project Overview",
+              "concepts": ["AI-powered code intelligence", "Multi-modal scanning", "Knowledge graph visualization", "Enterprise-ready"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 16.2,
+              "title": "Technical Architecture",
+              "concepts": ["FastMCP server (5 tools)", "Multi-agent orchestration (LangGraph)", "Multiple scanners", "Knowledge graph (NetworkX)", "Report generation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 16.3,
+              "title": "Infrastructure Stack",
+              "concepts": ["FastMCP", "LangGraph", "Qdrant", "Redis", "PostgreSQL", "Python AST", "tree-sitter", "FastAPI"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 16.4,
+              "title": "MCP Tools Exposed",
+              "concepts": ["scan_vulnerabilities", "check_arb_compliance", "scan_ai_readiness", "generate_report", "scan_by_prompt"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 16.5,
+              "title": "Deployment",
+              "concepts": ["Docker containerization", "Kubernetes on Azure AKS", "Auto-scaling (3-20 replicas)", "Health monitoring"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Understand production project",
+            "Learn real-world patterns",
+            "See enterprise deployment"
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": 4,
+      "phase_name": "HANDS-ON PROJECTS & IMPLEMENTATION",
+      "phase_description": "Week 5+ - Build real projects",
+      "difficulty": "all_levels",
+      "estimated_hours": "30-50+",
+      "topics": [
+        {
+          "topic_id": 17,
+          "title": "Build Your First MCP Server",
+          "file_path": null,
+          "difficulty": "intermediate",
+          "estimated_minutes": 360,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 17.1,
+              "title": "Design Simple Tool",
+              "concepts": ["Choose tool type", "Define inputs/outputs", "Plan implementation"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 17.2,
+              "title": "Implement MCP Server",
+              "concepts": ["Use FastMCP", "Implement tool", "Add error handling"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 17.3,
+              "title": "Test with Claude Desktop",
+              "concepts": ["Configure MCP settings", "Test tool invocation", "Debug issues"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Build working MCP server",
+            "Test with real client",
+            "Debug and troubleshoot"
+          ]
+        },
+        {
+          "topic_id": 18,
+          "title": "Deploy to Docker",
+          "file_path": null,
+          "difficulty": "intermediate",
+          "estimated_minutes": 240,
+          "prerequisites": [7, 17],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 18.1,
+              "title": "Containerize MCP Server",
+              "concepts": ["Write Dockerfile", "Build image", "Test locally"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 18.2,
+              "title": "Docker Compose Setup",
+              "concepts": ["Multi-service setup", "Volume mounting", "Network configuration"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Containerize applications",
+            "Use Docker Compose",
+            "Test container locally"
+          ]
+        },
+        {
+          "topic_id": 19,
+          "title": "Deploy to Kubernetes (Optional)",
+          "file_path": null,
+          "difficulty": "advanced",
+          "estimated_minutes": 360,
+          "prerequisites": [7, 18],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 19.1,
+              "title": "Create Kubernetes Manifests",
+              "concepts": ["Deployment YAML", "Service YAML", "ConfigMap and Secrets"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 19.2,
+              "title": "Deploy to AKS",
+              "concepts": ["Push to ACR", "Apply manifests", "Verify deployment"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 19.3,
+              "title": "Set Up Auto-Scaling",
+              "concepts": ["HPA configuration", "Resource limits", "Monitor scaling"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Deploy to Kubernetes",
+            "Configure auto-scaling",
+            "Monitor production system"
+          ]
+        },
+        {
+          "topic_id": 20,
+          "title": "Study IntelligentScan Implementation",
+          "file_path": "intelligentscan/",
+          "difficulty": "advanced",
+          "estimated_minutes": 480,
+          "prerequisites": [1, 2, 3, 4, 5, 6, 7, 8, 11, 16],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 20.1,
+              "title": "Read Source Code",
+              "concepts": ["Understand architecture", "Study patterns", "Learn conventions"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 20.2,
+              "title": "Run Locally",
+              "concepts": ["Setup environment", "Run services", "Test tools"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 20.3,
+              "title": "Modify and Extend",
+              "concepts": ["Add new tool", "Add new scanner", "Test changes"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Read production code",
+            "Understand real-world patterns",
+            "Extend existing project"
+          ]
+        },
+        {
+          "topic_id": 21,
+          "title": "Create Your Own AI Agent",
+          "file_path": null,
+          "difficulty": "advanced",
+          "estimated_minutes": 600,
+          "prerequisites": [11, 14],
+          "completed": false,
+          "last_studied": null,
+          "subtopics": [
+            {
+              "subtopic_id": 21.1,
+              "title": "Design Agent",
+              "concepts": ["Choose use case", "Define tools needed", "Plan architecture"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 21.2,
+              "title": "Implement Using Agentic Foundry",
+              "concepts": ["Create agent", "Add tools", "Test agent"],
+              "completed": false
+            },
+            {
+              "subtopic_id": 21.3,
+              "title": "Evaluate and Optimize",
+              "concepts": ["Run evaluation", "Optimize prompts", "Deploy to production"],
+              "completed": false
+            }
+          ],
+          "learning_outcomes": [
+            "Build production AI agent",
+            "Use enterprise platform",
+            "Deploy and monitor"
+          ]
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "milestone_id": 1,
+      "title": "MCP Fundamentals Understood",
+      "required_topics": [1, 2, 3, 4, 5, 6],
+      "estimated_hours": "6-8",
+      "validation_checklist": [
+        "Can explain what MCP is",
+        "Can explain client-server",
+        "Understand complete interaction cycle",
+        "Can read JSON-RPC messages",
+        "Built and ran first MCP server"
+      ]
+    },
+    {
+      "milestone_id": 2,
+      "title": "Infrastructure Competency",
+      "required_topics": [1, 2, 3, 4, 5, 6, 7, 8],
+      "estimated_hours": "5-7",
+      "validation_checklist": [
+        "Understand container vs VM",
+        "Can write Dockerfile",
+        "Understand Kubernetes concepts",
+        "Can deploy to Docker locally",
+        "Familiar with FastAPI"
+      ]
+    },
+    {
+      "milestone_id": 3,
+      "title": "Enterprise Platform Literacy",
+      "required_topics": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15],
+      "estimated_hours": "8-12",
+      "validation_checklist": [
+        "Understand MLflow lifecycle",
+        "Know Agentic Foundry features",
+        "Understand agent architecture",
+        "Can evaluate agents",
+        "Know deployment options"
+      ]
+    },
+    {
+      "milestone_id": 4,
+      "title": "Production Ready",
+      "required_topics": [17, 18, 19, 20, 21],
+      "estimated_hours": "15-25",
+      "validation_checklist": [
+        "Built real MCP server",
+        "Containerized application",
+        "Deployed to Kubernetes (optional)",
+        "Created production-ready code",
+        "Documented work professionally"
+      ]
+    }
+  ],
+  "learning_paths": [
+    {
+      "path_id": 1,
+      "name": "Sequential (Beginner-Friendly)",
+      "description": "Complete all topics in order - best for beginners",
+      "difficulty": "beginner",
+      "estimated_hours": "60-80",
+      "recommended_pace": "10-15 hours/week",
+      "topic_sequence": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "path_id": 2,
+      "name": "Project-Driven",
+      "description": "Learn by doing - jump to projects early",
+      "difficulty": "intermediate",
+      "estimated_hours": "50-70",
+      "recommended_pace": "15-20 hours/week",
+      "topic_sequence": [1, 2, 3, 17, 4, 5, 6, 7, 18, 8, 11, 16, 20, 12, 13, 14, 15, 21, 19]
+    },
+    {
+      "path_id": 3,
+      "name": "Fast-Track (Experienced Developers)",
+      "description": "Skip basics, focus on advanced topics",
+      "difficulty": "advanced",
+      "estimated_hours": "30-40",
+      "recommended_pace": "20+ hours/week",
+      "topic_sequence": [1, 4, 5, 6, 7, 11, 12, 14, 15, 16, 17, 18, 20, 21]
+    },
+    {
+      "path_id": 4,
+      "name": "Domain-Focused",
+      "description": "Focus on specific areas of interest",
+      "difficulty": "intermediate",
+      "estimated_hours": "25-40",
+      "recommended_pace": "Variable",
+      "topic_sequence": "User-defined based on domain interest"
+    }
+  ]
+}

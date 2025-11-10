@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "student_name": "User",
+    "started_date": null,
+    "last_updated": null,
+    "version": "1.0",
+    "selected_learning_path": null
+  },
+  "progress": {
+    "current_topic_id": null,
+    "current_subtopic_id": null,
+    "topics_completed": [],
+    "subtopics_completed": [],
+    "milestones_achieved": [],
+    "total_time_spent_minutes": 0,
+    "total_sessions": 0
+  },
+  "current_session": {
+    "session_id": null,
+    "start_time": null,
+    "topics_covered_today": [],
+    "subtopics_covered_today": [],
+    "notes": [],
+    "is_active": false
+  },
+  "session_history": [],
+  "statistics": {
+    "topics_by_difficulty": {
+      "beginner": {
+        "total": 0,
+        "completed": 0
+      },
+      "intermediate": {
+        "total": 0,
+        "completed": 0
+      },
+      "advanced": {
+        "total": 0,
+        "completed": 0
+      }
+    },
+    "phases_progress": {
+      "1": {
+        "name": "FOUNDATIONS",
+        "topics_total": 4,
+        "topics_completed": 0,
+        "percentage": 0
+      },
+      "2": {
+        "name": "CORE CONCEPTS",
+        "topics_total": 6,
+        "topics_completed": 0,
+        "percentage": 0
+      },
+      "3": {
+        "name": "ENTERPRISE & ADVANCED",
+        "topics_total": 6,
+        "topics_completed": 0,
+        "percentage": 0
+      },
+      "4": {
+        "name": "HANDS-ON PROJECTS",
+        "topics_total": 5,
+        "topics_completed": 0,
+        "percentage": 0
+      }
+    },
+    "average_session_duration_minutes": 0,
+    "streak_days": 0,
+    "longest_streak_days": 0
+  },
+  "preferences": {
+    "detailed_explanations": true,
+    "code_line_by_line": true,
+    "include_diagrams": true,
+    "difficulty_preference": "beginner",
+    "session_duration_target_minutes": 60
+  }
+}

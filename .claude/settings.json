@@ -1,5 +1,17 @@
 {
   "statusLine": {
     "command": "./.claude/statusline.sh"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/completion-sound.sh"
+          }
+        ]
+      }
+    ]
   }
 }
